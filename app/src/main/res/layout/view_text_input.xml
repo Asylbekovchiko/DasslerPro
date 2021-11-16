@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_label_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/gray_B1B1B1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tv_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_medium"
+            android:text="*"
+            android:textColor="@color/gray_B1B1B1"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@id/tv_label"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/edit_text_height"
+        android:layout_marginTop="@dimen/dp_0.5x"
+        android:background="@drawable/shape_rad_8dp_border_1dp_gray_e0e0e0"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:saveEnabled="false"
+        android:maxLines="1"
+        android:paddingHorizontal="@dimen/dp_2x"
+        android:textColorHint="@color/gray_818181"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cl_label_container" />
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        style="@style/ImageViewStyle"
+        android:layout_width="@dimen/ic_text_input"
+        android:layout_height="@dimen/ic_text_input"
+        android:layout_marginEnd="@dimen/dp_2x"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/et_input"
+        app:layout_constraintEnd_toEndOf="@id/et_input"
+        app:layout_constraintTop_toTopOf="@id/et_input"
+        tools:src="@drawable/ic_edit_pencil" />
+
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_0.5x"
+        android:fontFamily="@font/inter_medium"
+        android:textColor="@color/red_FF1B1B"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_input"
+        tools:text="@tools:sample/full_names"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

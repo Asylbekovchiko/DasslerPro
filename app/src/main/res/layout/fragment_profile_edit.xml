@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.profile.profileEditFragment.ProfileEditFragment">
+
+    <include
+        android:id="@+id/incl_toolbar"
+        layout="@layout/layout_toolbar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_2x"
+        android:layout_marginTop="@dimen/dp_2x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/incl_toolbar">
+
+        <kg.sunrise.dasslerpro.ui.customLayouts.views.TextInputView
+            android:id="@+id/ti_phone_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:editTextIcon="@drawable/ic_edit_pencil"
+            app:isRequired="true"
+            app:label="@string/Phone_number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <kg.sunrise.dasslerpro.ui.customLayouts.views.TextInputView
+            android:id="@+id/ti_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_2x"
+            app:errorText="@string/Input_data"
+            app:hint="@string/Whats_your_name"
+            app:isRequired="true"
+            app:label="@string/Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ti_phone_number" />
+
+        <kg.sunrise.dasslerpro.ui.customLayouts.views.TextInputView
+            android:id="@+id/ti_last_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_2x"
+            app:errorText="@string/Input_data"
+            app:hint="@string/Your_last_name"
+            app:isRequired="true"
+            app:label="@string/Last_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ti_name" />
+
+        <kg.sunrise.dasslerpro.ui.customLayouts.views.TextInputView
+            android:id="@+id/ti_patronymic_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_2x"
+            app:hint="@string/Your_patronymic_name"
+            app:isRequired="false"
+            app:label="@string/Patronymic_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ti_last_name" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_save"
+        style="@style/CustomButton.Gray"
+        android:layout_width="0dp"
+        android:layout_marginHorizontal="@dimen/dp_2x"
+        android:layout_marginBottom="@dimen/dp_1.5x"
+        android:text="@string/Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1" />
+
+    <include
+        android:id="@+id/incl_progress"
+        layout="@layout/layout_progress"
+        tools:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

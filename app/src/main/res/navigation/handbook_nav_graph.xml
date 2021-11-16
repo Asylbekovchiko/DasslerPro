@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/handbook_nav_graph"
+    app:startDestination="@id/handbookFragment">
+
+    <fragment
+        android:id="@+id/handbookFragment"
+        android:name="kg.sunrise.dasslerpro.ui.main.handbook.HandbookFragment"
+        android:label="fragment_handbook"
+        tools:layout="@layout/fragment_handbook" />
+</navigation>

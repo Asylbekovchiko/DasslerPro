@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/dp_2x"
+            tools:context=".ui.main.handbook.HandbookFragment">
+
+            <TextView
+                android:id="@+id/tv_handbook"
+                style="@style/text_bold_2_5x_black_1a1919"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_2x"
+                tools:text="@string/Handbook"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_handbook_description"
+                style="@style/text_regular_1_75x_black_1a1919"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_2x"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_handbook" />
+
+            <View
+                android:id="@+id/v_divider"
+                android:visibility="invisible"
+                tools:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/dp_3x"
+                android:background="@drawable/rounded_rect_grey_2dp_e0e0e0"
+                app:layout_constraintTop_toBottomOf="@id/tv_handbook_description" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_handbooks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="true"
+                android:overScrollMode="never"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/v_divider"
+                tools:itemCount="12"
+                tools:listitem="@layout/item_handbook" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/incl_progress"
+        layout="@layout/layout_progress" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

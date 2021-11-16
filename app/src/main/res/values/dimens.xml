@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- dp -->
+    <dimen name="dp_0.25x">2dp</dimen>
+    <dimen name="dp_0.5x">4dp</dimen>
+    <dimen name="dp_1x">8dp</dimen>
+    <dimen name="dp_1.25x">10dp</dimen>
+    <dimen name="dp_1.5x">12dp</dimen>
+    <dimen name="dp_1.75x">14dp</dimen>
+    <dimen name="dp_2x">16dp</dimen>
+    <dimen name="dp_2.25x">18dp</dimen>
+    <dimen name="dp_2.5x">20dp</dimen>
+    <dimen name="dp_3x">24dp</dimen>
+    <dimen name="dp_3.25x">26dp</dimen>
+    <dimen name="dp_3.5x">28dp</dimen>
+    <dimen name="dp_4x">32dp</dimen>
+    <dimen name="dp_4.25x">34dp</dimen>
+    <dimen name="dp_4.75x">38dp</dimen>
+    <dimen name="dp_6x">48dp</dimen>
+
+    <!-- sp -->
+    <dimen name="scale">8sp</dimen>
+    <dimen name="scale_1.5x">12sp</dimen>
+    <dimen name="scale_1.75x">14sp</dimen>
+    <dimen name="scale_2x">16sp</dimen>
+    <dimen name="scale_2.25x">18sp</dimen>
+    <dimen name="scale_2.5x">20sp</dimen>
+    <dimen name="scale_3x">24sp</dimen>
+
+    <!-- translation z -->
+    <dimen name="z_back_arrow">1dp</dimen>
+    <dimen name="z_progressbar">10dp</dimen>
+    <dimen name="z_no_internet">11dp</dimen>
+
+    <!-- icon size -->
+    <dimen name="ic_crown_size">20dp</dimen>
+    <dimen name="ic_partner_size">56dp</dimen>
+    <dimen name="ic_social_size">32dp</dimen>
+    <dimen name="ic_phone_size">32dp</dimen>
+    <dimen name="ic_settings_size">24dp</dimen>
+    <dimen name="ic_text_input">24dp</dimen>
+
+    <dimen name="btn_height">44dp</dimen>
+    <dimen name="slider_size">285dp</dimen>
+    <dimen name="bottom_nav_height">56dp</dimen>
+
+    <dimen name="dialog_icon_size">44dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="ic_arrow_size">24dp</dimen>
+    <dimen name="ic_close_size">24dp</dimen>
+    <dimen name="alert_dialog_width">304dp</dimen>
+    <dimen name="edit_text_height">44dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+
+</resources>

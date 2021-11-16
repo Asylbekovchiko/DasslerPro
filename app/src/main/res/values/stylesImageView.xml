@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ImageViewStyle">
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="ShapeAppearance.CornerTop_8" parent="">
+        <item name="cornerSizeTopLeft">@dimen/dp_1x</item>
+        <item name="cornerSizeTopRight">@dimen/dp_1x</item>
+    </style>
+
+</resources>

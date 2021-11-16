@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/cl_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.changePhoneNumber.changePhoneNumber.ChangePhoneNumberFragment">
+
+    <include
+        android:id="@+id/incl_toolbar"
+        layout="@layout/layout_toolbar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_2x"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/incl_toolbar"
+        app:layout_constraintVertical_bias=".4">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/Header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/Phone_number_change"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_1x"
+            android:layout_marginEnd="@dimen/dp_6x"
+            android:text="@string/Confirmation_code_description"
+            android:textColor="@color/gray_828282"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+        <kg.sunrise.dasslerpro.ui.customLayouts.views.TextInputView
+            android:id="@+id/ti_code_confirmation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_1.5x"
+            android:inputType="number"
+            app:hint="@string/Confirmation_code"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_desc" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_next"
+            style="@style/CustomButton.Gray"
+            android:layout_width="0dp"
+            android:layout_marginTop="@dimen/dp_2x"
+            android:text="@string/Next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ti_code_confirmation" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_sms_not_came"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_2x"
+        android:layout_marginBottom="@dimen/dp_1x"
+        android:fontFamily="@font/inter_semi_bold"
+        android:text="@string/Sms_doesnt_came"
+        android:textColor="@color/gray_9D9999"
+        app:layout_constraintBottom_toTopOf="@id/btn_send_again"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_send_again"
+        style="@style/CustomButton.Gray"
+        android:layout_width="0dp"
+        android:layout_marginHorizontal="@dimen/dp_2x"
+        android:layout_marginTop="@dimen/dp_2x"
+        android:layout_marginBottom="@dimen/dp_3x"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_send_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_2x"
+        android:text="@string/Send_again"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/btn_send_again"
+        app:layout_constraintStart_toStartOf="@id/btn_send_again"
+        app:layout_constraintTop_toTopOf="@id/btn_send_again" />
+
+    <TextView
+        android:id="@+id/tv_count_down"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_2x"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/btn_send_again"
+        app:layout_constraintEnd_toEndOf="@id/btn_send_again"
+        app:layout_constraintTop_toTopOf="@id/btn_send_again" />
+
+    <include
+        android:id="@+id/incl_progress"
+        layout="@layout/layout_progress"
+        tools:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

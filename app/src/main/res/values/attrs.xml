@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CrownView">
+        <attr name="text" format="string" />
+        <attr name="icon" format="reference" />
+        <attr name="textColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="TextInputView">
+        <attr name="android:inputType"/>
+        <attr name="label" format="string" />
+        <attr name="isRequired" format="boolean" />
+        <attr name="hint" format="string" />
+        <attr name="errorText" format="string" />
+        <attr name="editTextIcon" format="reference" />
+    </declare-styleable>
+</resources>

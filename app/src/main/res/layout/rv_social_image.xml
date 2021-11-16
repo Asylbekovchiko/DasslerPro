@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/iv_image"
+    android:layout_width="@dimen/ic_social_size"
+    android:layout_height="@dimen/ic_social_size"
+    android:scaleType="fitXY"
+    android:background="?android:attr/selectableItemBackgroundBorderless"
+    android:layout_marginBottom="@dimen/dp_1x"
+    tools:src="@drawable/ic_instagram" />

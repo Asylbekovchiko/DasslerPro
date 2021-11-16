@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_nav_graph"
+    app:startDestination="@id/profileFragment">
+
+    <action
+        android:id="@+id/action_global_to_profileFragment"
+        app:popUpTo="@id/profileFragment"
+        app:launchSingleTop="true"
+        app:destination="@id/profileFragment" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="kg.sunrise.dasslerpro.ui.main.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_profileEditFragment"
+            app:destination="@id/profileEditFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileEditFragment"
+        android:name="kg.sunrise.dasslerpro.ui.main.profile.profileEditFragment.ProfileEditFragment"
+        android:label="fragment_profile_edit"
+        tools:layout="@layout/fragment_profile_edit">
+
+        <action
+            android:id="@+id/action_profileEditFragment_to_number_change_nav_graph"
+            app:destination="@id/number_change_nav_graph"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right">
+            <argument
+                android:name="phoneNumber"
+                app:argType="string" />
+        </action>
+        <argument
+            android:name="userInfo"
+            app:argType="kg.sunrise.dasslerpro.data.models.responses.UserInfoResponse" />
+    </fragment>
+    <include app:graph="@navigation/number_change_nav_graph" />
+
+</navigation>

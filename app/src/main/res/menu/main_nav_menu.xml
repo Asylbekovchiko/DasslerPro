@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/main_nav_graph"
+        android:enabled="true"
+        android:icon="@drawable/selector_nav_main"
+        android:title="@string/Main" />
+    <item
+        android:id="@+id/handbook_nav_graph"
+        android:enabled="true"
+        android:icon="@drawable/selector_nav_handbook"
+        android:title="@string/Handbook"/>
+    <item
+        android:id="@+id/info_nav_graph"
+        android:enabled="true"
+        android:icon="@drawable/selector_nav_info"
+        android:title="@string/About_us"/>
+    <item
+        android:id="@+id/profile_nav_graph"
+        android:enabled="true"
+        android:icon="@drawable/selector_nav_profile"
+        android:title="@string/Profile"/>
+</menu>

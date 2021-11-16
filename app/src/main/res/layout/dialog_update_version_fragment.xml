@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/alert_dialog_width"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ui.customLayouts.alertDialogs.UpdateVersionDialogFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_3.25x"
+        android:layout_marginTop="@dimen/dp_4x"
+        android:layout_marginBottom="@dimen/dp_3x">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/Title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/Update"
+            android:textColor="@color/blue_dark_0F335D"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_update_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_1.5x"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/dp_2x"
+            android:text="@string/app_update_text"
+            android:textColor="@color/gray_7B818C"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cancel"
+            style="@style/CustomButton.Dismiss"
+            android:layout_width="0dp"
+            android:layout_marginTop="@dimen/dp_4x"
+            android:layout_marginEnd="@dimen/dp_2x"
+            android:text="@string/Skip"
+            app:barrierDirection="top"
+            app:layout_constraintEnd_toStartOf="@id/btn_ok"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_update_text" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_ok"
+            style="@style/CustomButton.Purple"
+            android:layout_width="0dp"
+            android:layout_marginTop="@dimen/dp_4x"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@id/btn_cancel"
+            app:layout_constraintTop_toBottomOf="@id/tv_update_text"
+            android:text="@string/to_update" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

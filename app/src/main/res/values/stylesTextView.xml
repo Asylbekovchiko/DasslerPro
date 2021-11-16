@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Header" parent="Theme.DasslerPro">
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:textSize">@dimen/scale_3x</item>
+        <item name="android:textColor">@color/black_201E1E</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="PromotionTitle" parent="Theme.DasslerPro">
+        <item name="android:fontFamily">@font/inter_semi_bold</item>
+        <item name="android:textSize">@dimen/scale_2x</item>
+        <item name="android:textColor">@color/black_1A1919</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="BottomSheetTitle" parent="Theme.DasslerPro">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:textSize">@dimen/scale_2.25x</item>
+        <item name="android:textColor">@color/black_1A1919</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="Title" parent="Theme.DasslerPro">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:textSize">@dimen/scale_2.5x</item>
+        <item name="android:textColor">@color/black_201E1E</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_bold_2x_black_1a1919" parent="Theme.DasslerPro">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:textSize">@dimen/scale_2x</item>
+        <item name="android:textColor">@color/black_1A1919</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_bold_2_5x_black_1a1919" parent="Theme.DasslerPro">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:textSize">@dimen/scale_2.5x</item>
+        <item name="android:textColor">@color/black_1A1919</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_regular_1_75x_black_1a1919" parent="Theme.DasslerPro">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">@dimen/scale_1.75x</item>
+        <item name="android:textColor">@color/black_1A1919</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+</resources>
